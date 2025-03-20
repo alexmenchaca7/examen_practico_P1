@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "practica2_creacion-consulta": {
+    "examen_practico_P1": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/practica2_creacion-consulta",
+            "outputPath": "dist/examen_practico_P1",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "practica2_creacion-consulta:build:production"
+              "buildTarget": "examen_practico_P1:build:production"
             },
             "development": {
-              "buildTarget": "practica2_creacion-consulta:build:development"
+              "buildTarget": "examen_practico_P1:build:development"
             }
           },
           "defaultConfiguration": "development"

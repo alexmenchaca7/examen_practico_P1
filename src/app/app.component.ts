@@ -9,5 +9,5 @@ import { RouterModule } from '@angular/router';
 })
 
 export class AppComponent {
-  title = 'practica2_creacion-consulta';
+  title = 'examen_practico_P1';
 }

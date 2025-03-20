@@ -1,5 +1,5 @@
 {
-  "name": "practica2_creacion-consulta",
+  "name": "examen_practico_P1",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:practica2_creacion-consulta": "node dist/practica2_creacion-consulta/server/server.mjs"
+    "serve:ssr:examen_practico_P1": "node dist/examen_practico_P1/server/server.mjs"
   },
   "private": true,
   "dependencies": {
