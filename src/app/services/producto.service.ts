@@ -19,44 +19,44 @@ export class ProductoService {
   private cargarProductosPorDefecto(): void {
     const productosXML = `
       <?xml version="1.0" encoding="UTF-8"?>
-          <productos>
-            <producto id="1">
-              <nombre>Tenis Nike Court Vision High</nombre>
-              <precio>2099</precio>
-              <cantidad>10</cantidad>
-              <imagen>assets/tenis1.jpg</imagen>
-            </producto>
-            <producto id="2">
-              <nombre>Tenis Nike Court Vision Low</nombre>
-              <precio>1139</precio>
-              <cantidad>15</cantidad>
-              <imagen>assets/tenis2.png</imagen>
-            </producto>
-            <producto id="3">
-              <nombre>Tenis Nike Casual Full Force Low</nombre>
-              <precio>2299</precio>
-              <cantidad>8</cantidad>
-              <imagen>assets/tenis3.png</imagen>
-            </producto>
-            <producto id="4">
-              <nombre>Tenis Nike Full Force Low</nombre>
-              <precio>1609</precio>
-              <cantidad>12</cantidad>
-              <imagen>assets/tenis4.png</imagen>
-            </producto>
-            <producto id="5">
-              <nombre>Tenis Nike Dunk Low Retro</nombre>
-              <precio>2299</precio>
-              <cantidad>20</cantidad>
-              <imagen>assets/tenis5.png</imagen>
-            </producto>
-            <producto id="6">
-              <nombre>Tenis Nike Air Max Excee</nombre>
-              <precio>1919</precio>
-              <cantidad>5</cantidad>
-              <imagen>assets/tenis6.png</imagen>
-            </producto>
-          </productos>
+      <productos>
+        <producto id="1">
+          <nombre>New York Yankees Negro 59FIFTY New Era Cap</nombre>
+          <precio>899</precio>
+          <cantidad>10</cantidad>
+          <imagen>assets/gorra1.jpg</imagen>
+        </producto>
+        <producto id="2">
+          <nombre>New York Yankees Verde 59FIFTY New Era Cap</nombre>
+          <precio>899</precio>
+          <cantidad>15</cantidad>
+          <imagen>assets/gorra2.webp</imagen>
+        </producto>
+        <producto id="3">
+          <nombre>Gorra New Era Green Pink</nombre>
+          <precio>899</precio>
+          <cantidad>8</cantidad>
+          <imagen>assets/gorra3.webp</imagen>
+        </producto>
+        <producto id="4">
+          <nombre>Gorra Goorin Bros Gallo</nombre>
+          <precio>899</precio>
+          <cantidad>12</cantidad>
+          <imagen>assets/gorra4.webp</imagen>
+        </producto>
+        <producto id="5">
+          <nombre>Gorra Goorin Bros Vaca</nombre>
+          <precio>899</precio>
+          <cantidad>20</cantidad>
+          <imagen>assets/gorra5.jpg</imagen>
+        </producto>
+        <producto id="6">
+          <nombre>Gorra Goorin Bros Pantera</nombre>
+          <precio>899</precio>
+          <cantidad>5</cantidad>
+          <imagen>assets/gorra6.jpg</imagen>
+        </producto>
+      </productos>
     `;
     this.productos = this.parsearProductosDesdeXML(productosXML);
   }

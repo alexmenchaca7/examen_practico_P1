@@ -8,7 +8,7 @@ import { DOMParser } from 'xmldom';
 })
 export class CarritoService {
   private carrito: Producto[] = [];
-  private tiendaNombre: string = 'Tienda de Tenis';
+  private tiendaNombre: string = 'Tienda de Gorras';
 
   constructor(private inventarioService: InventarioService) {
     this.cargarCarrito();
