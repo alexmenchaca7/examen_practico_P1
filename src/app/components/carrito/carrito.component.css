@@ -183,3 +183,19 @@
     font-family: monospace;
     font-size: 0.9rem;
 }
+
+.producto-cantidad input {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.producto-cantidad input:focus {
+    border-color: oklch(0.609 0.126 221.723);
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}

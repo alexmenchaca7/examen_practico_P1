@@ -28,6 +28,11 @@ export class CarritoComponent implements OnInit {
     this.carrito = this.carritoService.obtenerCarrito(); // Actualizar el carrito después de eliminar un producto
   }
 
+  actualizarCantidad(index: number, cantidad: number) {
+    this.carritoService.actualizarCantidad(index, cantidad);
+    this.carrito = this.carritoService.obtenerCarrito(); // Actualizar el carrito después de cambiar la cantidad
+  }
+
   generarXML() {
     this.recibo = this.carritoService.generarXML(); // Almacena el recibo generado
   }

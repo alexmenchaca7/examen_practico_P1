@@ -38,6 +38,16 @@ export class CarritoService {
     this.guardarCarrito();
   }
 
+  actualizarCantidad(index: number, cantidad: number) {
+    if (index >= 0 && index < this.carrito.length) {
+      const producto = this.carrito[index];
+      const diferencia = cantidad - (producto.cantidad ?? 0);
+      producto.cantidad = cantidad;
+      this.inventarioService.actualizarProductoCantidad(producto.id, this.inventarioService.obtenerProductoCantidad(producto.id) - diferencia); // Actualizar la cantidad en el inventario
+      this.guardarCarrito();
+    }
+  }
+
   obtenerCarrito(): Producto[] {
     return this.carrito;
   }
@@ -54,7 +64,6 @@ export class CarritoService {
       xml += `      <nombre>${producto.nombre}</nombre>\n`;
       xml += `      <precio>${producto.precio}</precio>\n`;
       xml += `      <cantidad>${producto.cantidad}</cantidad>\n`;
-      xml += `    </producto>\n`;
     });
     xml += `  <subtotal>$${subtotal}</subtotal>\n`;
     xml += `  <iva>$${iva.toFixed(2)}</iva>\n`;  // Mostrar IVA con 2 decimales
